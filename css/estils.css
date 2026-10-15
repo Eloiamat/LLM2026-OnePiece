@@ -1,0 +1,200 @@
+/* =========================================================
+   ESTILS GENERALS DEL DOCUMENT
+   ========================================================= */
+
+/* Configuració general del cos de la pàgina.
+   Estableix el color de fons de tota la pàgina. */
+body {
+    background: #ffff00;
+}
+
+/* =========================================================
+   BARRA DE NAVEGACIÓ
+   ========================================================= */
+
+/* Organitza els enllaços del menú en una fila horitzontal.
+   Centra els elements i defineix la separació entre ells. */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* Defineix l'aparença inicial dels enllaços del menú.
+   Elimina el subratllat i reserva un espai per a la vora. */
+nav a {
+    color: orange;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+/* Modifica l'aparença dels enllaços del menú quan
+   l'usuari hi passa el punter del ratolí per damunt. */
+nav a:hover {
+    color: black;
+    border: 1px solid black;
+}
+
+/* =========================================================
+   ENLLAÇOS GENERALS
+   ========================================================= */
+
+/* Estableix el color i l'estil per defecte dels enllaços
+   de text de la pàgina, inclosos els de la part inferior. */
+a {
+    color: orange;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+/* Aplica un canvi de color i una vora visible als enllaços
+   quan l'usuari hi passa el punter del ratolí per damunt. */
+a:hover {
+    color: black;
+    border: 1px solid black;
+}
+
+/* =========================================================
+   CONTENIDOR DE FONS GRIS
+   ========================================================= */
+
+/* Defineix el contenidor gris que agrupa elements de la
+   pàgina. Limita l'amplada al 70 %, afegeix espai interior
+   i centra el bloc horitzontalment. */
+.fondoGris {
+    background: grey;
+    width: 70%;
+    padding: 10px 25px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   CONTENIDOR PRINCIPAL DEL CONTINGUT
+   ========================================================= */
+
+/* Configura l'àrea principal de l'article.
+   Defineix el fons, l'amplada, la tipografia, el color
+   del text, l'alineació i els espais interiors.
+   box-sizing evita que el padding augmenti l'amplada total. */
+#cuerpo {
+    background: #f0f0f0;
+    width: 70%;
+    margin: 0 auto;
+    font-family: Verdana;
+    font-size: 1em;
+    text-align: justify;
+    padding: 1px 25px 20px;
+    box-sizing: border-box;
+    color: black;
+}
+
+/* =========================================================
+   CONTENIDOR DE FONS BLANC
+   ========================================================= */
+
+/* Crea un contenidor amb fons clar, centrat i amb una
+   amplada del 70 %. Incorpora espai interior al voltant
+   dels elements que conté. */
+#fondoBlanco {
+    background: #f0f0f0;
+    width: 70%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* =========================================================
+   TÍTOLS PRINCIPALS
+   ========================================================= */
+
+/* Defineix el color, la tipografia i la mida del títol H1
+   per diferenciar-lo visualment del text de l'article. */
+h1 {
+    color: #166a93;
+    font-family: Verdana;
+    font-size: 1.5em;
+}
+
+/* =========================================================
+   IMATGE DE PORTADA
+   ========================================================= */
+
+/* Converteix la imatge en un element de bloc i la centra
+   horitzontalment dins del seu contenidor. */
+#imgPortada {
+    display: block;
+    margin: 0 auto;
+}
+
+/* =========================================================
+   IMATGE PRINCIPAL DE ONE PIECE
+   ========================================================= */
+
+/* Centra la imatge principal i afegeix espai interior
+   al seu voltant per separar-la dels altres elements. */
+#imgONEP {
+    display: block;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+/* =========================================================
+   DATA DE PUBLICACIÓ I ICONES SOCIALS
+   ========================================================= */
+
+/* Organitza la data i els elements associats en una fila.
+   Alinea verticalment els elements i defineix la separació
+   horitzontal entre ells. */
+#fecha {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Defineix les dimensions i l'ajust de la primera icona.
+   object-fit manté la imatge dins de l'espai assignat
+   sense alterar-ne la proporció de contingut. */
+#iconoImg1 {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    display: block;
+}
+
+/* Defineix les dimensions i la presentació de la segona
+   icona de xarxes socials. */
+#iconoImg2 {
+    width: 17px;
+    height: 17px;
+    object-fit: contain;
+    display: block;
+}
+
+/* =========================================================
+   LÍNIES HORITZONTALS SEPARADORES
+   ========================================================= */
+
+/* Elimina els marges i la vora predeterminada de l'element
+   HR, i dibuixa una línia horitzontal negra de 2 píxels. */
+hr {
+    margin: 0;
+    border: none;
+    border-top: 2px solid black;
+}
+
+/* =========================================================
+   PEU DE PÀGINA
+   ========================================================= */
+
+/* Defineix el peu de pàgina amb fons lila.
+   Organitza el contingut en una fila, el centra en ambdós
+   eixos i estableix l'espai entre els elements. */
+#footer {
+    background: #9955bc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 10px;
+}
