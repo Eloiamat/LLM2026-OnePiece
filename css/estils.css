@@ -32,7 +32,7 @@ nav a {
    l'usuari hi passa el punter del ratolí per damunt. */
 nav a:hover {
     color: black;
-    border: 1px solid black;
+    text-decoration: underline;
 }
 
 /* =========================================================
@@ -51,7 +51,7 @@ a {
    quan l'usuari hi passa el punter del ratolí per damunt. */
 a:hover {
     color: black;
-    border: 1px solid black;
+    text-decoration: underline;
 }
 
 /* =========================================================
