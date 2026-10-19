@@ -3,9 +3,14 @@
    1. ESTILS GENERALS DEL DOCUMENT
    ========================================================= */
 
-/* Estableix el color de fons general de tota la pàgina. */
+/* Defineix el color de fons de tota la pàgina. */
 body {
     background: #ffff00;
+}
+
+/* Activa el desplaçament suau en navegar pels enllaços interns. */
+html {
+    scroll-behavior: smooth;
 }
 
 
@@ -13,24 +18,24 @@ body {
    2. BARRA DE NAVEGACIÓ
    ========================================================= */
 
-/* Distribueix els enllaços del menú en una fila horitzontal,
-   els centra i estableix una separació de 50 píxels. */
+/* Distribueix els enllaços horitzontalment, els centra
+   i estableix una separació de 50 píxels entre ells. */
 nav {
     display: flex;
     justify-content: center;
     gap: 50px;
 }
 
-/* Defineix el color inicial dels enllaços del menú,
-   elimina el subratllat i reserva una vora transparent. */
+/* Defineix l'aparença inicial dels enllaços del menú,
+   elimina el subratllat i estableix una vora transparent. */
 nav a {
     color: orange;
     text-decoration: none;
     border: 1px solid transparent;
 }
 
-/* Canvia el color dels enllaços i mostra el subratllat
-   quan l'usuari hi passa el cursor per damunt. */
+/* Canvia el color i afegeix el subratllat quan
+   l'usuari passa el cursor per damunt de l'enllaç. */
 nav a:hover {
     color: black;
     text-decoration: underline;
@@ -42,29 +47,28 @@ nav a:hover {
    ========================================================= */
 
 /* Defineix l'aparença predeterminada de tots els enllaços
-   de la pàgina, inclosos els que no formen part del menú. */
+   de la pàgina que no tinguin estils més específics. */
 a {
     color: orange;
     text-decoration: none;
     border: 1px solid transparent;
 }
 
-/* Modifica el color i el subratllat dels enllaços
-   quan l'usuari hi passa el cursor per damunt. */
+/* Canvia el color i afegeix el subratllat quan
+   l'usuari passa el cursor per damunt de l'enllaç. */
 a:hover {
     color: black;
     text-decoration: underline;
 }
 
 
-
 /* =========================================================
    4. CONTENIDOR AMB FONS GRIS
    ========================================================= */
 
-/* Defineix un contenidor gris amb una amplada del 70 %.
-   Afegeix espai interior i centra el contenidor
-   horitzontalment dins de la pàgina. */
+/* Estableix un fons gris i una amplada del 70 %.
+   Afegeix espai interior i centra el contenidor.
+   box-sizing inclou el padding dins de l'amplada total. */
 .fondoGris {
     background: grey;
     width: 70%;
@@ -78,9 +82,10 @@ a:hover {
    5. CONTENIDOR PRINCIPAL DEL CONTINGUT
    ========================================================= */
 
-/* Estableix el fons, l'amplada, el color del text i
-   els espais interiors de l'article principal.
-   box-sizing inclou el padding dins de l'amplada total. */
+/* Defineix el fons, l'amplada, el color del text i
+   els espais interiors del contingut principal.
+   Centra el contenidor i inclou el padding dins
+   de l'amplada total. */
 #cuerpo {
     background: #f0f0f0;
     width: 70%;
@@ -91,7 +96,7 @@ a:hover {
 }
 
 /* Justifica els paràgrafs i defineix la tipografia
-   i la mida del text del contingut. */
+   i la mida del text del document. */
 p {
     text-align: justify;
     font-family: Verdana;
@@ -103,8 +108,8 @@ p {
    6. CONTENIDOR AMB FONS BLANC
    ========================================================= */
 
-/* Crea un contenidor centrat amb una amplada del 70 %,
-   un fons gris molt clar i espai interior de 10 píxels. */
+/* Defineix un contenidor amb fons gris molt clar,
+   amplada del 70 %, espai interior i alineació centrada. */
 #fondoBlanco {
     background: #f0f0f0;
     width: 70%;
@@ -118,8 +123,8 @@ p {
    7. TÍTOLS PRINCIPALS
    ========================================================= */
 
-/* Defineix el color, la tipografia i la mida dels
-   títols principals de nivell h1. */
+/* Defineix el color, la tipografia i la mida
+   dels títols principals de nivell h1. */
 h1 {
     color: #166a93;
     font-family: Verdana;
@@ -131,8 +136,8 @@ h1 {
    8. IMATGE DE PORTADA
    ========================================================= */
 
-/* Converteix la imatge de portada en un element de bloc
-   i la centra horitzontalment dins del seu contenidor. */
+/* Converteix la imatge en un element de bloc
+   i la centra horitzontalment dins del contenidor. */
 #imgPortada {
     display: block;
     margin: 0 auto;
@@ -143,8 +148,8 @@ h1 {
    9. IMATGE PRINCIPAL DE ONE PIECE
    ========================================================= */
 
-/* Mostra la imatge principal com un bloc centrat
-   i afegeix 25 píxels d'espai interior al seu voltant. */
+/* Mostra la imatge principal com un element de bloc,
+   la centra i afegeix 25 píxels de padding. */
 #imgONEP {
     display: block;
     margin: 0 auto;
@@ -157,15 +162,15 @@ h1 {
    ========================================================= */
 
 /* Organitza la data i les icones en una fila,
-   les alinea verticalment i separa els elements 5 píxels. */
+   les alinea verticalment i les separa 5 píxels. */
 #fecha {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-/* Defineix les dimensions de la primera icona i
-   n'ajusta el contingut sense deformar-lo. */
+/* Defineix les dimensions de la primera icona
+   i evita que la imatge es deformi. */
 #iconoImg1 {
     width: 18px;
     height: 18px;
@@ -173,8 +178,8 @@ h1 {
     display: block;
 }
 
-/* Defineix les dimensions de la segona icona i
-   manté la proporció de la imatge. */
+/* Defineix les dimensions de la segona icona
+   i manté la proporció original de la imatge. */
 #iconoImg2 {
     width: 17px;
     height: 17px;
@@ -187,8 +192,8 @@ h1 {
    11. LÍNIES HORITZONTALS SEPARADORES
    ========================================================= */
 
-/* Elimina el marge i la vora predeterminats de l'element
-   hr i dibuixa una línia horitzontal negra de 2 píxels. */
+/* Elimina el marge i la vora predeterminats
+   i dibuixa una línia horitzontal negra de 2 píxels. */
 hr {
     margin: 0;
     border: none;
@@ -201,57 +206,69 @@ hr {
    ========================================================= */
 
 /* Defineix el color i el gruix del text de les llistes
-   i substitueix els marcadors per una icona personalitzada. */
+   i utilitza una imatge com a marcador personalitzat. */
 .columnes ul {
     color: #2fa8b1;
     font-weight: bold;
     list-style: url("../img/icono-cine.png");
 }
 
-/* Defineix el color negre i el gruix normal del text
-   dels elements de les llistes ordenades. */
+/* Defineix el color negre, el gruix normal del text
+   i els marcadors numèrics de les llistes ordenades
+   que es troben dins del contenidor .columnes. */
 .columnes ol li {
     color: black;
     font-weight: normal;
     list-style: decimal;
 }
 
-.columnesPersonatges ul{
-   font-weight: normal;
-   list-style-type: circle;
-   color: orange;
-
+/* Defineix el gruix normal del text, els marcadors
+   circulars i el color taronja de les llistes
+   de personatges. */
+.columnesPersonatges ul {
+    font-weight: normal;
+    list-style-type: circle;
+    color: orange;
 }
 
-.columnesPersonatges ul li::marker  {
-   color: gray;
+/* Canvia el color dels marcadors de les llistes
+   de personatges a gris. */
+.columnesPersonatges ul li::marker {
+    color: gray;
 }
+
+/* Defineix el gruix del text dels elements dt,
+   utilitzats habitualment com a termes de definició. */
+dt {
+    font-weight: bold;
+}
+
 
 /* =========================================================
-   13. DISTRIBUCIÓ EN DUES COLUMNES
+   13. DISTRIBUCIÓ DEL CONTINGUT EN DUES COLUMNES
    ========================================================= */
 
-/* Organitza el contingut en dues columnes horitzontals
-   i alinea els elements per la part superior. */
+/* Utilitza Flexbox per distribuir els elements
+   horitzontalment i els alinea per la part superior. */
 .columnes {
     display: flex;
     align-items: flex-start;
 }
 
-/* Evita que la llista es redueixi automàticament
-   quan comparteix espai amb la columna d'imatges. */
+/* Evita que la llista redueixi automàticament
+   la seva amplada dins del contenidor Flexbox. */
 .columnes ul {
     flex-shrink: 0;
 }
 
 
 /* =========================================================
-   14. IMATGES DE LA COLUMNA
+   14. IMATGES DE LES COLUMNES
    ========================================================= */
 
-/* Defineix les dimensions de les imatges i afegeix
-   espai inferior i esquerre per separar-les d'altres
-   elements de la pàgina. */
+/* Defineix les dimensions de les imatges de les columnes,
+   afegeix espai inferior i esquerre i les mostra
+   com a elements de bloc. */
 .imgColumnes {
     width: 800px;
     height: 650px;
@@ -262,33 +279,27 @@ hr {
 
 
 /* =========================================================
-   15. PEU DE PÀGINA
+   15. IMATGES DELS PERSONATGES
    ========================================================= */
 
-/* Defineix el fons lila del peu de pàgina.
-   Organitza els logotips en una fila, els centra
-   verticalment i horitzontalment i els separa 25 píxels. */
-#footer {
-    background: #9955bc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    padding: 10px;
+/* Estableix les dimensions de les imatges dels personatges,
+   les centra horitzontalment i afegeix espai interior. */
+.imgPersontatges {
+    width: 100px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-dt{
-   font-weight: bold;
-}
 
-.imgPersontatges{
-   width: 100px;
-   height: 150px;
-   display: block;
-   margin: 0 auto;
-   padding: 20px;
-}
+/* =========================================================
+   16. BOTONS I ENLLAÇOS AMB CLASSE .boto
+   ========================================================= */
 
+/* Mostra l'enllaç com un bloc, defineix l'amplada,
+   el fons, el color del text, l'alineació i la mida
+   de la lletra. També el centra horitzontalment. */
 .boto {
     display: block;
     width: 300px;
@@ -299,11 +310,28 @@ dt{
     font-size: 24px;
     margin: 0 auto;
 }
+
+/* Canvia el color del text a blanc i afegeix
+   el subratllat quan l'usuari passa el cursor. */
 .boto:hover {
     color: white;
     text-decoration: underline;
 }
 
-html {
-    scroll-behavior: smooth;
+
+/* =========================================================
+   17. PEU DE PÀGINA
+   ========================================================= */
+
+/* Defineix el fons lila del peu de pàgina.
+   Utilitza Flexbox per organitzar els logotips en una fila,
+   els centra verticalment i horitzontalment
+   i estableix una separació de 25 píxels. */
+#footer {
+    background: #9955bc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 10px;
 }
